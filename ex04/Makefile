@@ -1,4 +1,4 @@
-NAME = Weapon
+NAME = replace
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra
@@ -7,12 +7,9 @@ STD = -std=c++98
 RM = rm -rf
 
 SRCS =	main.cpp\
-		Weapon.cpp\
-		Weapon.hpp\
-		HumanA.cpp\
-		HumanA.hpp\
-		HumanB.cpp\
-		HumanB.hpp\
+		Replacer.cpp\
+		Replacer.hpp\
+	
 
 
 OBJ_DIR = obj
