@@ -7,7 +7,6 @@ STD = -std=c++98
 RM = rm -rf
 
 SRCS =	main.cpp\
-		Zombie.hpp\
 		Zombie.cpp\
 		zombieHorde.cpp\
 

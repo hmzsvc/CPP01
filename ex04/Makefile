@@ -8,8 +8,6 @@ RM = rm -rf
 
 SRCS =	main.cpp\
 		Replacer.cpp\
-		Replacer.hpp\
-	
 
 
 OBJ_DIR = obj
@@ -38,6 +36,7 @@ clean			:
 			
 
 fclean			:	clean
+					@rm -rf *.replace
 					@$(RM) $(NAME)
 					@echo "\e[1m$(COLOR_YELLOW)$(NAME)	$(COLOR_RED)[is deleted!]\e[0m$(COLOR_END)"
 

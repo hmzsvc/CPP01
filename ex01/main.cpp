@@ -8,6 +8,4 @@ int main()
         army[i].announce();
     }
     delete[]army;
-    //array olarak tek seferde açılan bellekleri temizlemek için 
-    //kapalı parantezle vermemiz gerekiyor
 }

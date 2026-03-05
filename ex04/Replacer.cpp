@@ -10,10 +10,9 @@ Replacer::~Replacer()
 
 void Replacer::replace()
 {
-    std::ifstream lockOpen(this->filename.c_str()); // git ve bu dosyayı bul ve okumak için kiilidini aç. 
-    // ifstream de okuma yapıyoruz ve filename e okuma için gönderirken oluşturduğumuz filename direkt değerle başlasın diye burada direkt bir atama yapıyoruz 
-    if (!lockOpen) // erişilebilir olduğunun kanıtı
-    {//Çünkü kullanıcı olmayan bir dosya adı girmiş olabilir veya dosyayı okuma yetkimiz olmayabilir. Böyle bir durumda programın çökmemesi için ekrana bir hata mesajı basıp işlemi durdurmamız lazım
+    std::ifstream lockOpen(this->filename.c_str());
+    if (!lockOpen)
+    {
         std::cerr << "permission denied" << std::endl;
         return;
     }

@@ -10,7 +10,6 @@ SRCS =	main.cpp\
 		newZombie.cpp\
 		Zombie.cpp\
 		randomChump.cpp\
-		Zombie.hpp\
 
 
 OBJ_DIR = obj

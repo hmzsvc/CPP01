@@ -28,12 +28,10 @@ void Harl::error(void) {
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
+// jump table
 void Harl::complain(std::string level)
 {
-    // jump table
-    //burada sadece kıyas için dizi ataması yapılıyor anahtarları tuttun
     std::string levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-    //burada ise sadece fonk adreslerini tutan bir değişken char * gibi br dizi anahtaların kapıların adresleri
     void (Harl::*functions[])(void) = {
         &Harl::debug,
         &Harl::info,
@@ -45,7 +43,6 @@ void Harl::complain(std::string level)
     {
         if (levels[i] == level)
         {
-            // o indisin içindeki fonksiyonu çalıştırıcak
             (this->*functions[i])();
             return;
         }

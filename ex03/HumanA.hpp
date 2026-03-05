@@ -9,9 +9,9 @@ class HumanA
 {
     private:
         std::string name;
-        Weapon& weapon; //burada referans ataması yapıyoruz
+        Weapon &weapon;
     public:
-        HumanA(std::string name, Weapon& weapon);
+        HumanA(std::string name, Weapon &weapon);
         ~HumanA();
         void attack();
 };

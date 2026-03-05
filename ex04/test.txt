@@ -1,1 +1,0 @@
-deneme = aa aa ab aa cc

@@ -8,11 +8,8 @@ RM = rm -rf
 
 SRCS =	main.cpp\
 		Weapon.cpp\
-		Weapon.hpp\
 		HumanA.cpp\
-		HumanA.hpp\
 		HumanB.cpp\
-		HumanB.hpp\
 
 
 OBJ_DIR = obj
